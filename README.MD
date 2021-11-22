@@ -5,7 +5,7 @@
 - Mongodb
 - redis
 
-## Discord reuirment
+## Discord Requirment
 
 - Bot token
 - channels:
@@ -13,7 +13,7 @@
   - reports
   - upwork-pools
 
-## Telegram requirment
+## Telegram Requirment
 
 - Bot Token
 
