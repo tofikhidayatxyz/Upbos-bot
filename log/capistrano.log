@@ -1,0 +1,143 @@
+# Logfile created on 2021-08-04 21:56:06 +0700 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-04 21:56:06 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c4795a47] Running /usr/bin/env mkdir -p /tmp/upwork-bot/ as ubuntu@54.169.51.0
+ DEBUG [c4795a47] Command: /usr/bin/env mkdir -p /tmp/upwork-bot/
+  INFO [c4795a47] Finished in 1.164 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/upwork-bot/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/upwork-bot/nvm-exec.sh 100.0%
+  INFO [65b3e4d6] Running /usr/bin/env chmod +x /tmp/upwork-bot/nvm-exec.sh as ubuntu@54.169.51.0
+ DEBUG [65b3e4d6] Command: /usr/bin/env chmod +x /tmp/upwork-bot/nvm-exec.sh
+  INFO [65b3e4d6] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [bad5c58a] Running [ -d $HOME/.nvm/v15.3.0 ] || [ -d $HOME/.nvm/versions/node/v15.3.0 ] as ubuntu@54.169.51.0
+ DEBUG [bad5c58a] Command: [ -d $HOME/.nvm/v15.3.0 ] || [ -d $HOME/.nvm/versions/node/v15.3.0 ]
+ DEBUG [bad5c58a] Finished in 0.179 seconds with exit status 1 (failed).
+ ERROR nvm: v15.3.0 is not installed or not found in any of $HOME/.nvm/v15.3.0 $HOME/.nvm/versions/node/v15.3.0
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-08-04 21:56:42 +0700 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ffa3abc0] Running /usr/bin/env mkdir -p /tmp/upwork-bot/ as ubuntu@54.169.51.0
+ DEBUG [ffa3abc0] Command: /usr/bin/env mkdir -p /tmp/upwork-bot/
+  INFO [ffa3abc0] Finished in 0.961 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/upwork-bot/nvm-exec.sh 0.0%
+  INFO Uploading /tmp/upwork-bot/nvm-exec.sh 100.0%
+  INFO [5e3e82cb] Running /usr/bin/env chmod +x /tmp/upwork-bot/nvm-exec.sh as ubuntu@54.169.51.0
+ DEBUG [5e3e82cb] Command: /usr/bin/env chmod +x /tmp/upwork-bot/nvm-exec.sh
+  INFO [5e3e82cb] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [39ec79ea] Running [ -d $HOME/.nvm/v14.17.4 ] || [ -d $HOME/.nvm/versions/node/v14.17.4 ] as ubuntu@54.169.51.0
+ DEBUG [39ec79ea] Command: [ -d $HOME/.nvm/v14.17.4 ] || [ -d $HOME/.nvm/versions/node/v14.17.4 ]
+ DEBUG [39ec79ea] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO [51c5d80f] Running /usr/bin/env mkdir -p /tmp as ubuntu@54.169.51.0
+ DEBUG [51c5d80f] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env mkdir -p /tmp )
+  INFO [51c5d80f] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-8188fe6ebe852d11c09b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-8188fe6ebe852d11c09b.sh 100.0%
+  INFO [1efb7c78] Running /usr/bin/env chmod 700 /tmp/git-ssh-8188fe6ebe852d11c09b.sh as ubuntu@54.169.51.0
+ DEBUG [1efb7c78] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env chmod 700 /tmp/git-ssh-8188fe6ebe852d11c09b.sh )
+  INFO [1efb7c78] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [49a462d8] Running /usr/bin/env git ls-remote git@github.com:tofikhidayatxyz/upwork-discord-pool.git HEAD as ubuntu@54.169.51.0
+ DEBUG [49a462d8] Command: ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env git ls-remote git@github.com:tofikhidayatxyz/upwork-discord-pool.git HEAD )
+ DEBUG [49a462d8] 	Warning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+ DEBUG [49a462d8] 	5be39b658807e9d692603defac59e774dafff447	HEAD
+  INFO [49a462d8] Finished in 2.769 seconds with exit status 0 (successful).
+  INFO [5ee058b8] Running /usr/bin/env mkdir -p /var/www/upwork-bot/shared /var/www/upwork-bot/releases as ubuntu@54.169.51.0
+ DEBUG [5ee058b8] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env mkdir -p /var/www/upwork-bot/shared /var/www/upwork-bot/releases )
+  INFO [5ee058b8] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [4e0ac91b] Running /usr/bin/env mkdir -p /var/www/upwork-bot/shared/node_modules as ubuntu@54.169.51.0
+ DEBUG [4e0ac91b] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env mkdir -p /var/www/upwork-bot/shared/node_modules )
+  INFO [4e0ac91b] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [ca0270b2] Running [ -f /var/www/upwork-bot/current/REVISION ] as ubuntu@54.169.51.0
+ DEBUG [ca0270b2] Command: [ -f /var/www/upwork-bot/current/REVISION ]
+ DEBUG [ca0270b2] Finished in 0.207 seconds with exit status 1 (failed).
+ DEBUG [66d5460c] Running [ -f /var/www/upwork-bot/repo/HEAD ] as ubuntu@54.169.51.0
+ DEBUG [66d5460c] Command: [ -f /var/www/upwork-bot/repo/HEAD ]
+ DEBUG [66d5460c] Finished in 0.172 seconds with exit status 1 (failed).
+ DEBUG [ad440a6d] Running if test ! -d /var/www/upwork-bot; then echo "Directory does not exist '/var/www/upwork-bot'" 1>&2; false; fi as ubuntu@54.169.51.0
+ DEBUG [ad440a6d] Command: if test ! -d /var/www/upwork-bot; then echo "Directory does not exist '/var/www/upwork-bot'" 1>&2; false; fi
+ DEBUG [ad440a6d] Finished in 0.186 seconds with exit status 0 (successful).
+  INFO [a615c643] Running /usr/bin/env git clone --mirror git@github.com:tofikhidayatxyz/upwork-discord-pool.git /var/www/upwork-bot/repo as ubuntu@54.169.51.0
+ DEBUG [a615c643] Command: cd /var/www/upwork-bot && ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env git clone --mirror git@github.com:tofikhidayatxyz/upwork-discord-pool.git /var/www/upwork-bot/repo )
+ DEBUG [a615c643] 	Cloning into bare repository '/var/www/upwork-bot/repo'...
+  INFO [a615c643] Finished in 3.281 seconds with exit status 0 (successful).
+ DEBUG [4a8580ed] Running if test ! -d /var/www/upwork-bot/repo; then echo "Directory does not exist '/var/www/upwork-bot/repo'" 1>&2; false; fi as ubuntu@54.169.51.0
+ DEBUG [4a8580ed] Command: if test ! -d /var/www/upwork-bot/repo; then echo "Directory does not exist '/var/www/upwork-bot/repo'" 1>&2; false; fi
+ DEBUG [4a8580ed] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [87bf7412] Running /usr/bin/env git remote set-url origin git@github.com:tofikhidayatxyz/upwork-discord-pool.git as ubuntu@54.169.51.0
+ DEBUG [87bf7412] Command: cd /var/www/upwork-bot/repo && ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env git remote set-url origin git@github.com:tofikhidayatxyz/upwork-discord-pool.git )
+  INFO [87bf7412] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [e86de1e3] Running /usr/bin/env git remote update --prune as ubuntu@54.169.51.0
+ DEBUG [e86de1e3] Command: cd /var/www/upwork-bot/repo && ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [e86de1e3] 	Fetching origin
+  INFO [e86de1e3] Finished in 2.504 seconds with exit status 0 (successful).
+ DEBUG [4c8cef77] Running if test ! -d /var/www/upwork-bot/repo; then echo "Directory does not exist '/var/www/upwork-bot/repo'" 1>&2; false; fi as ubuntu@54.169.51.0
+ DEBUG [4c8cef77] Command: if test ! -d /var/www/upwork-bot/repo; then echo "Directory does not exist '/var/www/upwork-bot/repo'" 1>&2; false; fi
+ DEBUG [4c8cef77] Finished in 0.211 seconds with exit status 0 (successful).
+  INFO [3ad6b2f2] Running /usr/bin/env mkdir -p /var/www/upwork-bot/releases/20210804145648 as ubuntu@54.169.51.0
+ DEBUG [3ad6b2f2] Command: cd /var/www/upwork-bot/repo && ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env mkdir -p /var/www/upwork-bot/releases/20210804145648 )
+  INFO [3ad6b2f2] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [01896055] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/upwork-bot/releases/20210804145648 as ubuntu@54.169.51.0
+ DEBUG [01896055] Command: cd /var/www/upwork-bot/repo && ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/upwork-bot/releases/20210804145648 )
+  INFO [01896055] Finished in 0.184 seconds with exit status 0 (successful).
+ DEBUG [c1977d3b] Running if test ! -d /var/www/upwork-bot/repo; then echo "Directory does not exist '/var/www/upwork-bot/repo'" 1>&2; false; fi as ubuntu@54.169.51.0
+ DEBUG [c1977d3b] Command: if test ! -d /var/www/upwork-bot/repo; then echo "Directory does not exist '/var/www/upwork-bot/repo'" 1>&2; false; fi
+ DEBUG [c1977d3b] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [266c968a] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@54.169.51.0
+ DEBUG [266c968a] Command: cd /var/www/upwork-bot/repo && ( export NODE_VERSION="v14.17.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-8188fe6ebe852d11c09b.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [266c968a] 	5be39b658807e9d692603defac59e774dafff447
+ DEBUG [266c968a] Finished in 0.176 seconds with exit status 0 (successful).
+ DEBUG [98ade834] Running if test ! -d /var/www/upwork-bot/releases/20210804145648; then echo "Directory does not exist '/var/www/upwork-bot/releases/20210804145648'" 1>&2; false; fi as ubuntu@54.169.51.0
+ DEBUG [98ade834] Command: if test ! -d /var/www/upwork-bot/releases/20210804145648; then echo "Directory does not exist '/var/www/upwork-bot/releases/20210804145648'" 1>&2; false; fi
+ DEBUG [98ade834] Finished in 0.171 seconds with exit status 0 (successful).
+  INFO [c1562f26] Running /usr/bin/env echo "5be39b658807e9d692603defac59e774dafff447" > REVISION as ubuntu@54.169.51.0
+ DEBUG [c1562f26] Command: cd /var/www/upwork-bot/releases/20210804145648 && ( export NODE_VERSION="v14.17.4" ; /usr/bin/env echo "5be39b658807e9d692603defac59e774dafff447" > REVISION )
+  INFO [c1562f26] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [b0ebc9d2] Running /usr/bin/env mkdir -p /var/www/upwork-bot/releases/20210804145648 as ubuntu@54.169.51.0
+ DEBUG [b0ebc9d2] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env mkdir -p /var/www/upwork-bot/releases/20210804145648 )
+  INFO [b0ebc9d2] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [f2ea9256] Running [ -L /var/www/upwork-bot/releases/20210804145648/node_modules ] as ubuntu@54.169.51.0
+ DEBUG [f2ea9256] Command: [ -L /var/www/upwork-bot/releases/20210804145648/node_modules ]
+ DEBUG [f2ea9256] Finished in 0.170 seconds with exit status 1 (failed).
+ DEBUG [2258a503] Running [ -d /var/www/upwork-bot/releases/20210804145648/node_modules ] as ubuntu@54.169.51.0
+ DEBUG [2258a503] Command: [ -d /var/www/upwork-bot/releases/20210804145648/node_modules ]
+ DEBUG [2258a503] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [2abd6d86] Running /usr/bin/env ln -s /var/www/upwork-bot/shared/node_modules /var/www/upwork-bot/releases/20210804145648/node_modules as ubuntu@54.169.51.0
+ DEBUG [2abd6d86] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env ln -s /var/www/upwork-bot/shared/node_modules /var/www/upwork-bot/releases/20210804145648/node_modules )
+  INFO [2abd6d86] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [0c8fc3c0] Running /usr/bin/env ln -s /var/www/upwork-bot/releases/20210804145648 /var/www/upwork-bot/releases/current as ubuntu@54.169.51.0
+ DEBUG [0c8fc3c0] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env ln -s /var/www/upwork-bot/releases/20210804145648 /var/www/upwork-bot/releases/current )
+  INFO [0c8fc3c0] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [83762504] Running /usr/bin/env mv /var/www/upwork-bot/releases/current /var/www/upwork-bot as ubuntu@54.169.51.0
+ DEBUG [83762504] Command: ( export NODE_VERSION="v14.17.4" ; /usr/bin/env mv /var/www/upwork-bot/releases/current /var/www/upwork-bot )
+  INFO [83762504] Finished in 0.207 seconds with exit status 0 (successful).
+ DEBUG [7bca252b] Running if test ! -d /var/www/upwork-bot/releases/20210804145648; then echo "Directory does not exist '/var/www/upwork-bot/releases/20210804145648'" 1>&2; false; fi as ubuntu@54.169.51.0
+ DEBUG [7bca252b] Command: if test ! -d /var/www/upwork-bot/releases/20210804145648; then echo "Directory does not exist '/var/www/upwork-bot/releases/20210804145648'" 1>&2; false; fi
+ DEBUG [7bca252b] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [717c6cbd] Running /tmp/upwork-bot/nvm-exec.sh npm install --legacy-peer-deps as ubuntu@54.169.51.0
+ DEBUG [717c6cbd] Command: cd /var/www/upwork-bot/releases/20210804145648 && ( export NODE_VERSION="v14.17.4" ; /tmp/upwork-bot/nvm-exec.sh npm install --legacy-peer-deps )
+ DEBUG [717c6cbd] 	Now using node v14.17.4 (npm v6.14.14)
+ DEBUG [717c6cbd] 	npm
+ DEBUG [717c6cbd] 	 
+ DEBUG [717c6cbd] 	WARN
+ DEBUG [717c6cbd] 	 
+ DEBUG [717c6cbd] 	read-shrinkwrap
+ DEBUG [717c6cbd] 	 This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@2. I'll try to do my best with it!
+ DEBUG [717c6cbd] 	npm
+ DEBUG [717c6cbd] 	 
+ DEBUG [717c6cbd] 	WARN
+ DEBUG [717c6cbd] 	 upwork-job-finder@1.0.0 No description
+ DEBUG [717c6cbd] 	
+ DEBUG [717c6cbd] 	added 196 packages from 333 contributors and audited 198 packages in 6.401s
+ DEBUG [717c6cbd] 	
+35 packages are looking for funding
+  run `npm fund` for details
+
+ DEBUG [717c6cbd] 	found 0 vulnerabilities
+
+  INFO [717c6cbd] Finished in 7.666 seconds with exit status 0 (successful).
+  INFO [ebe122ba] Running /usr/bin/env cp config/environment/.env.staging .env as ubuntu@54.169.51.0
+ DEBUG [ebe122ba] Command: cd /var/www/upwork-bot/releases/20210804145648 && ( export NODE_VERSION="v14.17.4" ; /usr/bin/env cp config/environment/.env.staging .env )
+ DEBUG [ebe122ba] 	cp: 
+ DEBUG [ebe122ba] 	cannot stat 'config/environment/.env.staging'
+ DEBUG [ebe122ba] 	: No such file or directory
+ DEBUG [ebe122ba] 	

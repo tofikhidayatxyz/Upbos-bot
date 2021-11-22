@@ -1,0 +1,52 @@
+{
+  "name": "upwork-job-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tofikhidayatxyz/upwork-discord-pool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tofikhidayatxyz/upwork-discord-pool/issues"
+  },
+  "homepage": "https://github.com/tofikhidayatxyz/upwork-discord-pool#readme",
+  "dependencies": {
+    "bull": "^3.27.0",
+    "clean-text-utils": "^1.1.17",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.13.5",
+    "node-telegram-bot-api": "^0.54.0",
+    "normalize-text": "^2.3.2",
+    "query-string": "^7.0.1",
+    "redis": "^3.1.2",
+    "rss-parser": "^3.12.0",
+    "telegraf": "^4.4.1",
+    "text-cleaner": "^1.2.1",
+    "uuid-token-generator": "^1.0.0"
+  },
+  "moduleAliases": {
+    "@Helper": "./App/Helpers",
+    "@Event": "./App/Events",
+    "@Command": "./App/Commands",
+    "@Service": "./App/Services",
+    "@Job": "./App/Jobs",
+    "@Route": "./Routes",
+    "@App": "./App",
+    "@Driver": "./App/Drivers",
+    "@Model": "./App/Models",
+    "@Module": "./App/Modules",
+    "@Bin": "./Bin"
+  }
+}
